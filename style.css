@@ -79,3 +79,7 @@ body {
 .card {
     margin-bottom: 20px;
 }
+
+html {
+  overflow-x: hidden;
+}
