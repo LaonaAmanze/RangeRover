@@ -11,7 +11,7 @@ body {
 /* Carousel styles */
 .carousel-item {
     height: 100vh;
-    min-height: 300px;
+    min-height: 100px;
 }
  
 .carousel-caption {
