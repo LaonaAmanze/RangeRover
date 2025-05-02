@@ -78,72 +78,74 @@
     form.reset(); // clear the form
   });
 </script>
- <style>
-              body {
-                  display: flex;
-                  flex-direction: column;
-                  min-height: 100vh;
-              }
-              .content {
-                  flex: 1;
-              }
-              .footer-3d {
-                  background: linear-gradient(180deg, #222, #111);
-                  color: white;
-                  text-align: center;
-                  padding: 20px 0;
-                  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.7);
-                  transform: perspective(500px) rotateX(10deg);
-                  position: relative;
-                  z-index: 10;
-              }
-              .footer-3d::before {
-                  content: "";
-                  position: absolute;
-                  top: -10px;
-                  left: 0;
-                  width: 100%;
-                  height: 10px;
-                  background: rgba(255, 255, 255, 0.1);
-                  filter: blur(2px);
-              }
-              .footer-links a {
-                  color: #bbb;
-                  text-decoration: none;
-                  margin: 0 15px;
-                  transition: 0.3s;
-              }
-              .footer-links a:hover {
-                  color: #fff;
-                  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-              }
-              .social-icons a {
-                  color: #bbb;
-                  font-size: 24px;
-                  margin: 0 15px;
-                  transition: 0.3s;
-              }
-              .social-icons a:hover {
-                  color: #fff;
-                  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-              }
-          </style>
-      </head>
-      <body></body>
-      
-          <footer class="footer-3d">
-              <p>&copy; 2025 Land Rover | All Rights Reserved</p>
-              <div class="footer-links">
-                   <a class="nav-link" href="index.html">Home</a>  
-                   <a class="nav-link" href="about.html">About</a> 
-                   <a class="nav-link" href="models.html">Model</a>
-                   <a class="nav-link" href="contact.html">Contact</a>   
-              </div>
-          </footer>
-      
-      </body>
-      </html>
-
+  <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden; /* Hide horizontal overflow */
+        }
+        .content {
+            flex: 1;
+        }
+        .footer-3d {
+            background: linear-gradient(180deg, #222, #111);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.7);
+            transform: perspective(500px) rotateX(10deg);
+            position: relative;
+            z-index: 10;
+        }
+        .footer-3d::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            filter: blur(2px);
+        }
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+        .footer-links a:hover {
+            color: #fff;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+        }
+        .social-icons a {
+            color: #bbb;
+            font-size: 24px;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #fff;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer-3d">
+                        <p>&copy; 2025 Land Rover | All Rights Reserved</p>
+                 <p><strong>Follow Us</strong></p>
+                <br>
+                <p>
+                   <a href="https://www.instagram.com/rangerover/" target="_blank"><i class="fab fa-instagram"></i></a> |
+                   <a href="https://www.facebook.com/rangerover" target="_blank"><i class="fab fa-facebook-f"></i></a> |
+                   <a href="https://twitter.com/rangerover" target="_blank"><i class="fab fa-twitter"></i></a> |
+                  <a href="https://www.youtube.com/user/LandRover" target="_blank"><i class="fab fa-youtube"></i></a>
+              </p>
+         
+   </footer>
+                
+    </body>
+    </html>
     
 
 
