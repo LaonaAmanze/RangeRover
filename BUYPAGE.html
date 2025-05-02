@@ -149,23 +149,33 @@
           <label for="message">Additional Notes</label>
           <textarea id="message" name="message" rows="4" placeholder="Any special requests or details?"></textarea>
       
-          <button type="submit">Submit Purchase Request</button>
-          <p class="note">You will be contacted by our sales team shortly after submission.</p>
-      
-          <!-- Thank You Message -->
-          <p id="thankYouMsg" style="display: none; color: green; font-weight: 600; margin-top: 20px;">
-            ✅ Thank you for your submission! Our team will contact you shortly.
-          </p>
-        </form>
-      </div>
-      
-      <!-- JavaScript for displaying thank you message -->
-      <script>
-        function showThankYou() {
-          document.getElementById("thankYouMsg").style.display = "block";
-        }
-      </script>
-      
+         <form id="purchaseForm" onsubmit="handleFormSubmit(event)">
+  <!-- Your form fields go here -->
+
+  <button type="submit">Submit Purchase Request</button>
+  <p class="note">You will be contacted by our sales team shortly after submission.</p>
+
+  <!-- Thank You Message -->
+  <p id="thankYouMsg" style="display: none; color: green; font-weight: 600; margin-top: 20px;">
+    ✅ Thank you for your submission! Our team will contact you shortly.
+  </p>
+</form>
+
+<!-- JavaScript for displaying thank you message -->
+<script>
+  function handleFormSubmit(event) {
+    event.preventDefault(); // Prevent actual form submission
+    showThankYou();
+    // Optional: disable submit button or clear form fields
+    // event.target.reset(); // Reset form if desired
+    // event.target.querySelector('button[type="submit"]').disabled = true;
+  }
+
+  function showThankYou() {
+    document.getElementById("thankYouMsg").style.display = "block";
+  }
+</script>
+
     </body>
     </html>
     
