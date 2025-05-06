@@ -7,205 +7,198 @@
     <link rel="icon" type="image/png" href="logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      .content {
+        flex: 1;
+      }
+      .footer-3d {
+        background: linear-gradient(180deg, #222, #111);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.7);
+        transform: perspective(500px) rotateX(10deg);
+        position: relative;
+        z-index: 10;
+      }
+      .footer-3d::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        filter: blur(2px);
+      }
+      .footer-links a {
+        color: #bbb;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: 0.3s;
+      }
+      .footer-links a:hover {
+        color: #fff;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+      }
+      .social-icons a {
+        color: #bbb;
+        font-size: 24px;
+        margin: 0 15px;
+        transition: 0.3s;
+      }
+      .social-icons a:hover {
+        color: #fff;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+      }
+    </style>
   </head>
   <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"><span class="text warning"><b>RANGE</span>ROVER</b></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="models.html">Model</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Service.html">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="feedback.html">feedback</a>
-              </li>
-              </ul>
-          </div>
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-warning"><b>RANGE</span>ROVER</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="models.html">Model</a></li>
+            <li class="nav-item"><a class="nav-link" href="Service.html">Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          </ul>
         </div>
-      </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-      <body>
-        <br><br><br>
-    
-        <header>
-            <h1> LAND ROVER DISCOVERY </h1>
-            <p><b>The Ultimate Family SUV with Go-Anywhere Capability</b></p>
-        </header>
-    
-        <img src="DISCOVERY" alt="Land Rover Discovery">
-    
-        <!-- Performance & Powertrains Section -->
-        <section style="padding: 30px; font-family: 'Segoe UI', sans-serif; background-color: #f9f9f9; color: #222; line-height: 1.7;">
-            <h1 style="text-align: center; font-size: 28px; color: #0b5c10; border-bottom: 2px solid #ddd; padding-bottom: 10px;">
-                 Performance & Powertrains
-            </h1>
-    
-            <p style="font-size: 16px; margin-top: 20px;">
-                The <strong>Land Rover Discovery</strong> offers refined performance, powerful engines, and go-anywhere versatility, making it ideal for large families and adventurous spirits alike.
-            </p>
-    
-            <h2 style="color: #000000; margin-top: 30px;"> Mild-Hybrid Petrol (P300 / P360)</h2>
-            <ul style="margin-left: 20px;">
-                <li>2.0L or 3.0L turbocharged petrol engines</li>
-                <li>Integrated MHEV system for improved efficiency</li>
-                <li>Power outputs up to <strong>265kW</strong></li>
-                <li>0-100km/h in as little as <strong>6.5 seconds</strong></li>
-            </ul>
-    
-            <h2 style="color: #000000; margin-top: 30px;"> Diesel Options (D250 / D300)</h2>
-            <ul style="margin-left: 20px;">
-                <li>3.0L six-cylinder Ingenium diesel engines</li>
-                <li>High torque and towing capacity</li>
-                <li>MHEV technology standard</li>
-            </ul>
-    
-            <h2 style="color: #000000; margin-top: 30px;"> All-Terrain Mastery</h2>
-            <ul style="margin-left: 20px;">
-                <li>Standard AWD with Terrain Response 2®</li>
-                <li>Wading depth of <strong>900mm</strong> – best in class</li>
-                <li>Optional Advanced Tow Assist</li>
-            </ul>
-        </section>
-    
-        <img src="interior.jpg" alt="Discovery Interior">
-        <br><br>
-    
-        <!-- Interior & Technology Section -->
-        <section style="padding: 30px; font-family: 'Segoe UI', sans-serif; background-color: #ffffff; color: #222; line-height: 1.7;">
-            <h1 style="text-align: center; font-size: 28px; color: #0b5c10; border-bottom: 2px solid #ddd; padding-bottom: 10px;">
-                 Interior & Technology
-            </h1>
-    
-            <p style="font-size: 16px; margin-top: 20px;">
-                Designed for modern families, the <strong>Discovery</strong> blends intelligent technology with flexible interior space and high-end comfort.
-            </p>
-    
-            <h2 style="color: #000000; margin-top: 30px;"> Pivi Pro Infotainment</h2>
-            <ul style="margin-left: 20px;">
-                <li>11.4" curved touchscreen interface</li>
-                <li>Navigation, media, and connectivity in one place</li>
-            </ul>
-    
-            <h2 style="color: #000000; margin-top: 30px;"> Seven-Seat Versatility</h2>
-            <ul style="margin-left: 20px;">
-                <li>Standard 5+2 seating configuration</li>
-                <li>Sliding second row and flat-fold third row</li>
-            </ul>
-    
-            <h2 style="color: #000000; margin-top: 30px;"> Cabin Air Purification</h2>
-            <ul style="margin-left: 20px;">
-                <li>PM2.5 filtration and CO2 management</li>
-                <li>Creates a cleaner, healthier cabin environment</li>
-            </ul>
-    
-            <h2 style="color: #000000; margin-top: 30px;"> Meridian™ Sound System</h2>
-            <ul style="margin-left: 20px;">
-                <li>Crystal-clear surround sound experience</li>
-                <li>Balanced acoustics for all three rows</li>
-            </ul>
-        </section>
-    </body>
-
-    <div style="text-align: center; margin-top: 10px;">
-        <a href="BUYPAGE.html" target="_blank">
-          <button style="
-            background-color: #0b5c10;
-            color: white;
-            padding: 12px 25px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-          ">Buy Now</button>
-        </a>
       </div>
+    </nav>
 
-       <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow-x: hidden; /* Hide horizontal overflow */
-        }
-        .content {
-            flex: 1;
-        }
-        .footer-3d {
-            background: linear-gradient(180deg, #222, #111);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.7);
-            transform: perspective(500px) rotateX(10deg);
-            position: relative;
-            z-index: 10;
-        }
-        .footer-3d::before {
-            content: "";
-            position: absolute;
-            top: -10px;
-            left: 0;
-            width: 100%;
-            height: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            filter: blur(2px);
-        }
-        .footer-links a {
-            color: #bbb;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: 0.3s;
-        }
-        .footer-links a:hover {
-            color: #fff;
-            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-        }
-        .social-icons a {
-            color: #bbb;
-            font-size: 24px;
-            margin: 0 15px;
-            transition: 0.3s;
-        }
-        .social-icons a:hover {
-            color: #fff;
-            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-        }
-    </style>
-</head>
-<body>
+    <!-- Spacer for fixed navbar -->
+    <div style="height: 80px;"></div>
+
+    <!-- Header -->
+    <header class="text-center mb-4">
+      <h1>LAND ROVER DISCOVERY</h1>
+      <p><b>The Ultimate Family SUV with Go-Anywhere Capability</b></p>
+    </header>
+
+    <div class="container text-center mb-4">
+      <img src="discovery.jpg" alt="Land Rover Discovery" class="img-fluid">
+    </div>
+
+    <!-- Performance & Powertrains -->
+    <section style="padding: 30px; font-family: 'Segoe UI', sans-serif; background-color: #f9f9f9; color: #222; line-height: 1.7;">
+      <h1 class="text-center" style="font-size: 28px; color: #0b5c10; border-bottom: 2px solid #ddd; padding-bottom: 10px;">
+        Performance & Powertrains
+      </h1>
+
+      <p class="mt-3">
+        The <strong>Land Rover Discovery</strong> offers refined performance, powerful engines, and go-anywhere versatility, making it ideal for large families and adventurous spirits alike.
+      </p>
+
+      <h2 class="mt-4">Mild-Hybrid Petrol (P300 / P360)</h2>
+      <ul>
+        <li>2.0L or 3.0L turbocharged petrol engines</li>
+        <li>Integrated MHEV system for improved efficiency</li>
+        <li>Power outputs up to <strong>265kW</strong></li>
+        <li>0-100km/h in as little as <strong>6.5 seconds</strong></li>
+      </ul>
+
+      <h2 class="mt-4">Diesel Options (D250 / D300)</h2>
+      <ul>
+        <li>3.0L six-cylinder Ingenium diesel engines</li>
+        <li>High torque and towing capacity</li>
+        <li>MHEV technology standard</li>
+      </ul>
+
+      <h2 class="mt-4">All-Terrain Mastery</h2>
+      <ul>
+        <li>Standard AWD with Terrain Response 2®</li>
+        <li>Wading depth of <strong>900mm</strong> – best in class</li>
+        <li>Optional Advanced Tow Assist</li>
+      </ul>
+    </section>
+
+    <div class="container text-center my-4">
+      <img src="interior.jpg" alt="Discovery Interior" class="img-fluid">
+    </div>
+
+    <!-- Interior & Technology -->
+    <section style="padding: 30px; font-family: 'Segoe UI', sans-serif; background-color: #ffffff; color: #222; line-height: 1.7;">
+      <h1 class="text-center" style="font-size: 28px; color: #0b5c10; border-bottom: 2px solid #ddd; padding-bottom: 10px;">
+        Interior & Technology
+      </h1>
+
+      <p class="mt-3">
+        Designed for modern families, the <strong>Discovery</strong> blends intelligent technology with flexible interior space and high-end comfort.
+      </p>
+
+      <h2 class="mt-4">Pivi Pro Infotainment</h2>
+      <ul>
+        <li>11.4" curved touchscreen interface</li>
+        <li>Navigation, media, and connectivity in one place</li>
+      </ul>
+
+      <h2 class="mt-4">Seven-Seat Versatility</h2>
+      <ul>
+        <li>Standard 5+2 seating configuration</li>
+        <li>Sliding second row and flat-fold third row</li>
+      </ul>
+
+      <h2 class="mt-4">Cabin Air Purification</h2>
+      <ul>
+        <li>PM2.5 filtration and CO2 management</li>
+        <li>Creates a cleaner, healthier cabin environment</li>
+      </ul>
+
+      <h2 class="mt-4">Meridian™ Sound System</h2>
+      <ul>
+        <li>Crystal-clear surround sound experience</li>
+        <li>Balanced acoustics for all three rows</li>
+      </ul>
+    </section>
+
+    
+    <div class="text-center my-4">
+      <a href="BUYPAGE.html" target="_blank">
+        <button style="
+          background-color: #0b5c10;
+          color: white;
+          padding: 12px 25px;
+          font-size: 16px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        ">Buy Now</button>
+      </a>
+    </div>
+
+    
     <footer class="footer-3d">
-                        <p>&copy; 2025 Land Rover | All Rights Reserved</p>
-                 <p><strong>Follow Us</strong></p>
-                <br>
-                <p>
-                   <a href="https://www.instagram.com/rangerover/" target="_blank"><i class="fab fa-instagram"></i></a> |
-                   <a href="https://www.facebook.com/rangerover" target="_blank"><i class="fab fa-facebook-f"></i></a> |
-                   <a href="https://twitter.com/rangerover" target="_blank"><i class="fab fa-twitter"></i></a> |
-                  <a href="https://www.youtube.com/user/LandRover" target="_blank"><i class="fab fa-youtube"></i></a>
-              </p>
-         
-   </footer>
-                
-    </body>
-    </html>
+      <p>&copy; 2025 Land Rover | All Rights Reserved</p>
+      <p><strong>Follow Us</strong></p>
+      <br>
+      <p class="social-icons">
+        <a href="https://www.instagram.com/rangerover/" target="_blank"><i class="fab fa-instagram"></i></a> |
+        <a href="https://www.facebook.com/rangerover" target="_blank"><i class="fab fa-facebook-f"></i></a> |
+        <a href="https://twitter.com/rangerover" target="_blank"><i class="fab fa-twitter"></i></a> |
+        <a href="https://www.youtube.com/user/LandRover" target="_blank"><i class="fab fa-youtube"></i></a>
+      </p>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
