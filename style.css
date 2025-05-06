@@ -193,4 +193,51 @@ footer a:hover {
   transform: scale(1.02);
 }
 
- 
+h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .model-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
